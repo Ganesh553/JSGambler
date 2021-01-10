@@ -5,6 +5,12 @@ class Gambler{
             var value=this.play();
             day[i] = value;
         }
+        console.log(day)
+        var y = Object.keys(day).reduce(function(a, b){return day[a] > day[b] ? a:b});
+        console.log("Lackist day is :", y)
+
+        let key = Object.keys(day).reduce((key, v) => day[v] < day[key] ? v : key);
+        console.log("UnLackist day is :",key)
     }
     play(){
         var Stake=100;

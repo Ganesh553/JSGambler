@@ -10,6 +10,10 @@ class Gambler{
         var Stake=100;
         var day=0;
         var count=0
+    play(){
+        var Stake=100;
+        var day=0;
+        var count = 0;
         var flag=true;
         while(flag){
             if(count==50){
@@ -17,6 +21,14 @@ class Gambler{
             }       
             var bet=Math.floor(Math.random() * 2);
             count=count+1;    
+                return;
+            }       
+        var count=0
+        var flag=true;
+         while(flag){
+            var bet=Math.floor(Math.random() * 2);
+            count=count+1;
+            console.log(count)
             if(bet==1){
                 Stake=Stake+1;
             }else{

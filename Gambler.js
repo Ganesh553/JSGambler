@@ -9,6 +9,9 @@ class Gambler{
                 flag=false;
                 return;
             }       
+        var count=0
+        var flag=true;
+         while(flag){
             var bet=Math.floor(Math.random() * 2);
             count=count+1;
             console.log(count)

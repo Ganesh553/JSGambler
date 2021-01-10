@@ -2,6 +2,13 @@ class Gambler{
     play(){
         var Stake=100;
         var day=0;
+        var count = 0;
+        var flag=true;
+        while(flag){
+            if(count==50){
+                flag=false;
+                return;
+            }       
         var count=0
         var flag=true;
          while(flag){
